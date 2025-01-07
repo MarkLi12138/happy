@@ -121,13 +121,7 @@ body {
   max-width: 100%;
 }
 
-.six .hat {
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  top: -35%;
-  width: 80px;
-}
+/* 删除帽子相关代码 */
 
 .baloons img {
   display: inline-block;
@@ -241,30 +235,6 @@ body {
   z-index: 3;
 }
 
-@media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
-  }
-}
-
-@media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
-}
-
-@media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .container {
     width: 90%;
@@ -285,10 +255,6 @@ body {
 
   .idea-6 span {
     font-size: 8rem; /* 调整字体大小 */
-  }
-
-  .six .hat {
-    width: 50px;
   }
 
   .wish-hbd {
