@@ -5,8 +5,8 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #f5f5f5; 
-  color: #333;
+  background: linear-gradient(to bottom right, #fff8e1, #ffecb3); /* 更改背景颜色为较淡的渐变色 */
+  color: #5d4037; /* 更改字体颜色为深色 */
 }
 
 .song {
@@ -21,8 +21,9 @@ body {
   text-align: center;
   visibility: hidden;
   width: 100vw;
-  background-color: #ffffff; 
+  background-color: #fff8e1; /* 更改背景颜色为较淡的渐变色 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-image: linear-gradient(to bottom right, #fff8e1, #ffecb3); /* 添加背景渐变颜色 */
 }
 
 .container > div {
@@ -33,33 +34,36 @@ body {
 }
 
 .one {
-  font-size: 4.5rem;
-  color: #2c3e50; 
+  font-size: 4rem; /* 调整标题字体大小 */
+  color: #d84315; /* 更改标题颜色为暖色 */
 }
 
 .two {
-  font-size: 1.2rem;
+  font-size: 1.5rem; /* 调整副标题字体大小 */
   font-weight: lighter;
-  color: #7f8c8d;
+  color: #bf360c; /* 更改副标题颜色为暖色 */
 }
 
 .three {
-  font-size: 3rem;
-  color: #34495e;
+  font-size: 2.5rem; /* 调整字体大小 */
+  color: #e64a19; /* 更改颜色为暖色 */
 }
 
 .four .text-box {
-  border: 3px solid #aaa;
+  border: 3px solid #bf360c; /* 更改边框颜色为暖色 */
   border-radius: 5px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px; /* 增加内边距 */
   position: relative;
   width: 600px;
+  background-color: #ffffff;
+  color: #5d4037; /* 更改字体颜色为深色 */
 }
 
 .text-box p {
   margin: 0;
   text-align: left;
+  font-size: 1.2rem; /* 调整字体大小 */
 }
 
 .text-box span {
@@ -67,7 +71,7 @@ body {
 }
 
 .text-box .fake-btn {
-  background-color: rgb(21, 161, 237);
+  background-color: #d84315; /* 更改按钮颜色为暖色 */
   border-radius: 3px;
   bottom: -50px;
   color: #fff;
@@ -77,20 +81,24 @@ body {
 }
 
 .five p {
-  font-size: 2rem;
+  font-size: 1.8rem; /* 调整字体大小 */
   left: 0;
   position: absolute;
   right: 0;
+  color: #5d4037; /* 更改字体颜色为深色 */
 }
 
 .idea-3 strong {
   border-radius: 3px;
   display: inline-block;
   padding: 3px 5px;
+  background-color: #00796b;
+  color: #ffffff;
 }
 
 .five .idea-5 {
-  font-size: 4rem;
+  font-size: 3.5rem; /* 调整字体大小 */
+  color: #004d40;
 }
 
 .idea-5 span, .idea-6 span, .wish-hbd span {
@@ -98,9 +106,8 @@ body {
 }
 
 .idea-6 span{
-  font-size: 15rem;
+  font-size: 12rem; /* 调整字体大小 */
 }
-
 
 .six {
   position: relative;
@@ -112,14 +119,12 @@ body {
   display: inline-block;
   height: 350px;
   max-width: 100%;
-  /* height: auto; */
 }
 
 .six .hat {
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
-  /* transform: scale(0.1); */
   top: -35%;
   width: 80px;
 }
@@ -212,20 +217,23 @@ body {
 }
 
 .wish-hbd {
-  font-size: 3em;
+  font-size: 2.8rem; /* 调整字体大小 */
   margin: 0;
   text-transform: uppercase;
+  color: #00796b;
 }
 
 .wish h5 {
-  font-size: 2rem;
+  font-size: 1.8rem; /* 调整字体大小 */
   font-weight: lighter;
   margin: 10px 0 0;
+  color: #004d40;
 }
 
 .nine p {
-  font-size: 2rem;
+  font-size: 1.8rem; /* 调整字体大小 */
   font-weight: lighter;
+  color: #004d40;
 }
 
 #replay {
@@ -233,7 +241,6 @@ body {
   z-index: 3;
 }
 
-/* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
     left: 40%;
@@ -277,24 +284,23 @@ body {
   }
 
   .idea-6 span {
-    font-size: 10rem;
+    font-size: 8rem; /* 调整字体大小 */
   }
 
   .six .hat {
-    /* top: -20px; */
     width: 50px;
   }
 
   .wish-hbd {
-    font-size: 2.2em;
+    font-size: 2rem; /* 调整字体大小 */
   }
 
   .wish h5 {
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* 调整字体大小 */
   }
 
   .nine p {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* 调整字体大小 */
     font-weight: lighter;
   }
 }

@@ -18,7 +18,6 @@ window.addEventListener('load', () => {
     });
 });
 
-
 // animation timeline
 const animationTimeline = () => {
     // split chars that needs to be animated individually
@@ -67,7 +66,7 @@ const animationTimeline = () => {
             opacity: 0,
             y: 10
         },
-    "+=3.5")
+    "+=4.5") // 增加停留时间
     .to(".two",
         0.7,
         {
@@ -85,7 +84,7 @@ const animationTimeline = () => {
             opacity: 0,
             y: 10
         },
-    "+=3")
+    "+=4") // 增加停留时间
     .from(".four", 0.7, {
         scale: 0.2,
         opacity: 0,
@@ -114,9 +113,9 @@ const animationTimeline = () => {
         },
     "+=1")
     .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
+    .to(".idea-1", 0.7, ideaTextTransLeave, "+=3.5") // 增加停留时间
     .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
+    .to(".idea-2", 0.7, ideaTextTransLeave, "+=3.5") // 增加停留时间
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
         scale: 1.2,
@@ -124,9 +123,9 @@ const animationTimeline = () => {
         backgroundColor: "rgb(21, 161, 237)",
         color: "#fff",
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
+    .to(".idea-3", 0.7, ideaTextTransLeave, "+=3.5") // 增加停留时间
     .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
+    .to(".idea-4", 0.7, ideaTextTransLeave, "+=3.5") // 增加停留时间
     .from(
         ".idea-5",
         0.7, {
@@ -209,7 +208,6 @@ const animationTimeline = () => {
         0.7, {
             opacity: 0,
             y: -50,
-            // scale: 0.3,
             rotation: 150,
             skewX: "30deg",
             ease: Elastic.easeOut.config(1, 0.5),
